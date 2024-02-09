@@ -1,0 +1,11 @@
+@mixin boton {
+        padding: 10px 30px;
+        border-radius: 6px;
+        background-image: linear-gradient(135deg, #616D43 0%, #919F69 100%);
+        box-shadow: 0 20px 30px -6px rgba(145,159,105, 0.5);
+        outline: none;
+        cursor: pointer;
+        border: none;
+        font-size: 1rem;
+        color: #000;
+}

@@ -1,0 +1,22 @@
+.container {
+    .row {
+        .nav_logo{
+            display: flex;
+            justify-content: center;
+            .logo {
+                width: 100px;
+            }
+        }
+        .nav_bar {
+            ul {
+                li {
+                    a {
+                        color: #000;
+                        font-weight: 600;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
