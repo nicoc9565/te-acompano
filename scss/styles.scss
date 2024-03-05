@@ -1,7 +1,9 @@
 @import "./variables";
+@import "./mixins";
 
 
-@import "./_generales";
-@import "./_header";
-@import "./_index";
+@import "./generales";
+@import "./header";
+@import "./index";
+@import "./footer";
 @import "./mediaquery";
