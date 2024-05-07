@@ -20,6 +20,7 @@
                 text-decoration: none;
                 color: #000;
                 font-size: 18px;
+                font-weight: 600;
                 padding: 0.5rem;
                 position: relative;
                 &::before {
@@ -53,7 +54,7 @@
 
 .caja-inicio {
     background: linear-gradient(0deg, rgba(223,223,223,1) 10%, rgba(145,159,105,1) 90%);
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,4 +110,68 @@
             }
         }
     }
+}
+
+.contenedor-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 150px 0;
+    h2 {
+        font-size: $fontSizeH2;
+        font-weight: $fontWeight;
+        text-shadow: $textShadow;
+    }
+    p {
+        font-size: $fontSizeH4;
+        max-width: 80ch;
+    }
+    .contenedor-productos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        .product_card {
+            img {
+                height: 300px;
+                filter: drop-shadow(
+                    0 0 10px rgba(0, 0, 0, .8)
+                );
+            }
+            h3 {
+                font-size: $fontSizeH3;
+                text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+            }
+            i {
+                font-size: 20px;
+                color: $colorDeFondos2;
+            }
+            p {
+                font-size: $fontSizeH4;
+                font-weight: $fontWeight;
+            }
+        }
+        .product_cards {
+            img {
+                height: 200px;
+                margin: 60px 0;
+                filter: drop-shadow(
+                    0 0 10px rgba(0, 0, 0, .8)
+                );
+            }
+            h3 {
+                font-size: $fontSizeH3;
+                text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+            }
+            p {
+                max-width: 40ch;
+            }
+            span {
+                font-weight: $fontWeight;
+            }
+        }
+    }
+}
+.border-footer {
+    border-bottom: 3px solid $secundario3;
 }
