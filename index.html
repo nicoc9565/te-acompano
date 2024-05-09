@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <title>Te Acompaño</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
   </head>
   <body>
     <header>
-
       <a href="#" class="logo">Té Acompaño.</a>
 
       <nav class="navbar">
-        <a class="active" href="#inicio">Inicio</a>
-        <a href="#productos">Productos</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#contacto">Contacto</a>
+        <a class="active" href="#inicio">inicio</a>
+        <a href="#productos">productos</a>
+        <a href="#nosotros">nosotros</a>
+        <a href="#contacto">contacto</a>
       </nav>
 
       <div class="icons">
@@ -38,8 +39,8 @@
       <i class="fas fa-times" id="close"></i>
     </form>
 
-    <section class="home" id="home">
-      <div class="swiper home-slider">
+    <section class="inicio" id="inicio">
+      <div class="swiper inicio-slider">
         <div class="swiper-wrapper wrapper">
 
           <div class="swiper-slide slide">
@@ -52,10 +53,10 @@
               </p>
               <a href="#" class="btn">Comprar</a>
             </div>
-            <divComprar class="image">
+            <div class="image">
               <img src="./img/imagen/sin fondo/taza_de_te.png" alt="" />
             </div>
-          </div>
+          </div>         
 
           <div class="swiper-slide slide">
             <div class="content">
@@ -97,6 +98,14 @@
     </section>
 
     <section class="productos" id="productos">
+      <h3 class="sub-title">Nuestras Hebras</h3>
+      <h1 class="title">Hebras Populares</h1>
+    
+      <div class="box-container">
+        <!-- Las tarjetas de productos se insertarán aquí -->
+      </div>
+    </section>
+<!--     <section class="productos" id="productos">
       <h3 class="sub-title">Nuestras Hebras</h3>
       <h1 class="title">Hebras Populares</h1>
 
@@ -148,57 +157,8 @@
           <span>$15.99</span>
           <a href="#" class="btn">agregar al carrito</a>
         </div>
-
-        <div class="box">
-          <img src="./img/imagen/sin fondo/blendit_pastel.png" alt="hebras">
-          <a href="#" class="fas fa-heart"></a>
-          <a href="#" class="fas fa-eye"></a>
-          <h3>hebras</h3>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-          <span>$15.99</span>
-          <a href="#" class="btn">agregar al carrito</a>
-        </div>
-
-        <div class="box">
-          <img src="./img/imagen/sin fondo/blendit_amarillo.png" alt="hebras">
-          <a href="#" class="fas fa-heart"></a>
-          <a href="#" class="fas fa-eye"></a>
-          <h3>hebras</h3>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-          <span>$15.99</span>
-          <a href="#" class="btn">agregar al carrito</a>
-        </div>
-
-        <div class="box">
-          <img src="./img/imagen/sin fondo/blendit_azulado.png" alt="hebras">
-          <a href="#" class="fas fa-heart"></a>
-          <a href="#" class="fas fa-eye"></a>
-          <h3>hebras</h3>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-          <span>$15.99</span>
-          <a href="#" class="btn">agregar al carrito</a>
-        </div>
-
       </div>
-    </section>
+    </section> -->
 
     <section class="nosotros" id="nosotros">
       <h3 class="sub-title">sobre nosotros</h3>
@@ -234,7 +194,37 @@
 
     </section>
 
+    <section class="contacto" id="contacto">
+
+      <div class="box-container">
+
+        <div class="box">
+          <h3>Navegacion</h3>
+          <a href="#inicio">inicio</a>
+          <a href="#productos">productos</a>
+          <a href="#nosotros">nosotros</a>
+        </div>
+
+        <div class="box">
+          <h3>contacto</h3>
+          <a href="#">+54 9 3764 115566</a>
+          <a href="#">ejemplo@gmail.com</a>
+          <a href="#">Misiones, Argentina - 3300</a>
+        </div>
+
+        <div class="box">
+          <h3>Siguenos</h3>
+          <a href="https://www.instagram.com/te.acompano.blend/" target="_blank" >faceboo</a>
+          <a href="https://www.instagram.com/te.acompano.blend/" target="_blank" >instagram</a>
+          <a href="https://www.instagram.com/te.acompano.blend/" target="_blank" >twitter</a>
+        </div>
+
+      </div>
+
+      <div class="credit">&copy; Copyright 2024 by <span>Nicolas Conti. Web Designer</span></div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/716c2b6b4a.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>  </body>
 </html>
