@@ -20,11 +20,47 @@
         <a href="#contacto">contacto</a>
       </nav>
 
-      <div class="icons">
+      <div class="icons container-icon">
         <i class="fas fa-bars" id="menu-bars"></i>
         <i class="fas fa-search" id="search-icon"></i>
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-cart-shopping"></a>
+        <div class="container-cart-icon">
+          <i class="fas fa-cart-shopping" id="carrito-icon"></i>
+          <div class="count-products">
+            <span id="contador-productos">0</span>
+          </div>
+        </div>
+
+        <div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+            <div class="info-cart-product">
+              <span class="cantidad-producto-carrito">1</span>
+              <p class="titulo-producto-carrito">Hebras</p>
+              <span class="precio-producto-carrito">$20</span>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon-close"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
       </div>
     </header>
 
@@ -54,7 +90,7 @@
               <a href="#" class="btn">Comprar</a>
             </div>
             <div class="image">
-              <img src="./img/imagen/sin fondo/taza_de_te.png" alt="" />
+              <img src="./img/imagen/sin-fondo/taza_de_te.png" alt="" />
             </div>
           </div>         
 
@@ -70,7 +106,7 @@
             </div>
             <div class="image">
               <img
-                src="./img/imagen/sin fondo/blendit_frutos_rojos.png"
+                src="./img/imagen/sin-fondo/blendit_frutos_rojos.png"
                 alt=""
               />
             </div>
@@ -87,7 +123,7 @@
               <a href="#" class="btn">Comprar</a>
             </div>
             <div class="image">
-              <img src="./img/imagen/sin fondo/blendit_azulado.png" alt="" />
+              <img src="./img/imagen/sin-fondo/blendit_azulado.png" alt="" />
             </div>
           </div>
         </div>
@@ -102,63 +138,8 @@
       <h1 class="title">Hebras Populares</h1>
     
       <div class="box-container">
-        <!-- Las tarjetas de productos se insertarán aquí -->
       </div>
     </section>
-<!--     <section class="productos" id="productos">
-      <h3 class="sub-title">Nuestras Hebras</h3>
-      <h1 class="title">Hebras Populares</h1>
-
-      <div class="box-container">
-        <div class="box">
-          <img src="./img/imagen/sin fondo/blendit_morado.png" alt="hebras">
-          <a href="#" class="fas fa-heart"></a>
-          <a href="#" class="fas fa-eye"></a>
-          <h3>hebras</h3>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-          <span>$15.99</span>
-          <a href="#" class="btn">agregar al carrito</a>
-        </div>
-
-        <div class="box">
-          <img src="./img/imagen/sin fondo/blendit_rosa.png" alt="hebras">
-          <a href="#" class="fas fa-heart"></a>
-          <a href="#" class="fas fa-eye"></a>
-          <h3>hebras</h3>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-          <span>$15.99</span>
-          <a href="#" class="btn">agregar al carrito</a>
-        </div>
-
-        <div class="box">
-          <img src="./img/imagen/sin fondo/blendit_verde.png" alt="hebras">
-          <a href="#" class="fas fa-heart"></a>
-          <a href="#" class="fas fa-eye"></a>
-          <h3>hebras</h3>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-          <span>$15.99</span>
-          <a href="#" class="btn">agregar al carrito</a>
-        </div>
-      </div>
-    </section> -->
 
     <section class="nosotros" id="nosotros">
       <h3 class="sub-title">sobre nosotros</h3>
@@ -167,7 +148,7 @@
       <div class="row">
 
         <div class="image">
-          <img src="./img/imagen/sin fondo/hebras-taza.png" alt="">
+          <img src="./img/imagen/sin-fondo/hebras-taza.png" alt="">
         </div>
 
         <div class="content">

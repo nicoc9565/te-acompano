@@ -1,0 +1,64 @@
+[
+    {
+      "image": "./img/imagen/sin-fondo/blendit_morado.png",
+      "name": "Hebras Moradas",
+      "price": "$13.99",
+      "rating": 4.5
+    },
+    {
+      "image": "./img/imagen/sin-fondo/blendit_rosa.png",
+      "name": "Hebras Rosas",
+      "price": "$15.99",
+      "rating": 4.5
+    },
+    {
+      "image": "./img/imagen/sin-fondo/blendit_verde.png",
+      "name": "Hebras Verdes",
+      "price": "$12.99",
+      "rating": 4.5
+    },
+    {
+      "image": "./img/imagen/sin-fondo/blendit_pastel.png",
+      "name": "Hebras Pastel",
+      "price": "$23.99",
+      "rating": 4.5
+    },
+    {
+      "image": "./img/imagen/sin-fondo/blendit_amarillo.png",
+      "name": "Hebras Amarillas",
+      "price": "$9.99",
+      "rating": 4.5
+    },
+    {
+      "image": "./img/imagen/sin-fondo/blendit_azulado.png",
+      "name": "Hebras Azules",
+      "price": "$15.99",
+      "rating": 4.5
+    },
+    {
+      "image": "./img/imagen/sin-fondo/blendit_frutos_rojos.png",
+      "name": "Frutos Rojos",
+      "price": "$15.99",
+      "rating": 4.5
+    },
+    {
+      "image": "./img/imagen/sin-fondo/blendit_limonada.png",
+      "name": "Limonada",
+      "price": "$15.99",
+      "rating": 4.5
+    },
+    {
+      "image": "./img/imagen/sin-fondo/blendit_citrico.png",
+      "name": "Citrico",
+      "price": "$15.99",
+      "rating": 4.5
+    },
+    {
+      "image": "./img/imagen/sin-fondo/taza_de_te.png",
+      "name": "taza de te",
+      "price": "$15.99",
+      "rating": 4.5
+    }
+    
+  ]
+  
