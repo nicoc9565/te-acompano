@@ -1,2 +1,0 @@
-# té Acompaño
-Pagina web
