@@ -22,7 +22,13 @@
 
       <div class="icons container-icon">
         <i class="fas fa-bars" id="menu-bars"></i>
-        <i class="fas fa-search" id="search-icon"></i>
+
+        <div class="search">
+          <span class="icon">
+            <i class="fas fa-search search-btn" ></i>
+            <i class="fa-solid fa-x close-btn" ></i>
+          </span>
+        </div>          
         <div class="container-cart-icon">
           <i class="fas fa-cart-shopping" id="carrito-icon"></i>
           <div class="count-products">
@@ -34,9 +40,9 @@
 					<div class="row-product hidden">
 						<div class="cart-product">
             <div class="info-cart-product">
-              <span class="cantidad-producto-carrito">1</span>
-              <p class="titulo-producto-carrito">Hebras</p>
-              <span class="precio-producto-carrito">$20</span>
+              <span class="cantidad-producto-carrito"></span>
+              <p class="titulo-producto-carrito"></p>
+              <span class="precio-producto-carrito"></span>
             </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -62,18 +68,10 @@
 					<p class="cart-empty">El carrito está vacío</p>
 				</div>
       </div>
+      <div class="search-box">
+        <input type="text" placeholder="Buscar...">
+      </div>
     </header>
-
-    <form action="" id="search-form">
-      <input
-        type="search"
-        placeholder="buscar aqui..."
-        name=""
-        id="search-box"
-      />
-      <label for="search-box" class="fas fa-search"></label>
-      <i class="fas fa-times" id="close"></i>
-    </form>
 
     <section class="inicio" id="inicio">
       <div class="swiper inicio-slider">
@@ -208,4 +206,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/716c2b6b4a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>
