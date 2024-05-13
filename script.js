@@ -144,6 +144,24 @@ document.addEventListener("DOMContentLoaded", function () {
     showHTML();
   });
 
+  const guardarCarritoEnLocalStorage = () => {
+    localStorage.setItem("carrito", JSON.stringify(allProducts));
+  };
+
+  // Función para cargar el contenido del carrito desde el localStorage
+  const cargarCarritoDesdeLocalStorage = () => {
+    const carritoGuardado = localStorage.getItem("carrito");
+    if (carritoGuardado) {
+      allProducts = JSON.parse(carritoGuardado);
+      showHTML(); // Actualiza la interfaz con los productos del carrito
+    }
+  };
+
+  // Llama a la función para cargar el carrito al cargar la página
+  window.addEventListener("DOMContentLoaded", () => {
+    cargarCarritoDesdeLocalStorage();
+  });
+
   const showHTML = () => {
     if (!allProducts.length) {
       cartEmpty.classList.remove("hidden");
@@ -195,6 +213,8 @@ document.addEventListener("DOMContentLoaded", function () {
     valorTotal.innerText = `$${total}`;
 
     countProducts.innerText = totalOfProducts;
+
+    guardarCarritoEnLocalStorage();
   };
 
   let searchBtn = document.querySelector(".search-btn");
