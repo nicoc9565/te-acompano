@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     sections.forEach((sec) => {
       let top = window.scrollY;
       let height = sec.offsetHeight;
-      let offset = sec.offsetTop - 150;
+      let offset = sec.offsetTop - 300;
       let id = sec.getAttribute("id");
 
       if (top >= offset && top < offset + height) {
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
-      delay: 2500,
+      delay: 7500,
       disableOnInteraction: false,
     },
     pagination: {
@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="info-cart-product">
           <span class="cantidad-producto-carrito">${product.quantity}</span>
           <p class="titulo-producto-carrito">${product.title}</p>
-          <span class="precio-producto-carrito">$${product.price}</span>
+          <span class="precio-producto-carrito">${product.price}</span>
         </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -296,13 +296,15 @@ header {
 }
 
 .inicio {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+
     .inicio-slider {
         .slide {
             display: flex;
             align-items: center;
-            flex-wrap: wrap;
             gap: 2rem;
-            padding-top: 9rem;
 
             .content {
                 span {
@@ -324,10 +326,9 @@ header {
             }
 
             .image {
-                flex: 1 1 45rem;
-
                 img {
-                    width: 80%;
+                    height: 30rem;
+                    object-fit: cover;
                 }
             }
         }
@@ -339,10 +340,12 @@ header {
 }
 
 .productos {
+    margin-bottom: 15rem;
+
     .box-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-        gap: 2.5rem
+        grid-template-columns: repeat(auto-fill, minmax(36rem, 1fr));
+        gap: 8rem
     }
 
     .box {
@@ -358,6 +361,7 @@ header {
         img {
             height: 17rem;
             margin: 1rem 0;
+            object-fit: cover;
         }
 
         h3 {
@@ -385,6 +389,7 @@ header {
 
 .nosotros {
     box-shadow: var(--box-shadow);
+    padding: 10rem;
 
     .row {
         display: flex;
@@ -450,28 +455,64 @@ header {
 }
 
 .contacto {
-    padding-top: 5rem;
+    padding-top: 10rem;
     border-top: 2.5rem solid rgba(0, 0, 0, .1);
 
+    .box-icons {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10rem;
+        flex-wrap: wrap;
+
+        .boxes {
+            display: flex;
+            align-items: center;
+
+
+            i {
+                font-size: 55px;
+                padding-right: 15px;
+                color: var(--black);
+
+            }
+
+            .boxes_text {
+                h3 {
+                    font-size: 2.5rem;
+                    font-weight: bold;
+                    margin: 0;
+                    color: var(--black);
+
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    margin-bottom: 0;
+                    color: var(--green);
+                }
+            }
+        }
+    }
+
     .box-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-        gap: 1.5rem;
-        justify-content: center;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 10rem;
+        flex-wrap: wrap;
 
         .box {
             text-align: left;
 
             h3 {
                 padding: .5rem 0;
-                font-size: 2.5rem;
+                font-size: 3.5rem;
                 color: var(--black);
             }
 
             a {
                 display: block;
                 padding: .5rem 0;
-                font-size: 1.5rem;
+                font-size: 2rem;
                 color: var(--light-color);
 
                 &:hover {
@@ -484,12 +525,12 @@ header {
 
     .credit {
         text-align: center;
-        border-top: .1rem solid rgba(0, 0, 0, .1);
-        font-size: 2rem;
+        border-top: .3rem solid rgba(0, 0, 0, .1);
+        font-size: 1.5rem;
         color: var(--black);
         padding: .5rem;
         padding-top: 1.5rem;
-        margin-top: 1.5rem;
+        margin-top: .5rem;
 
         span {
             color: var(--green);
@@ -508,7 +549,7 @@ header {
     }
 
     section {
-        padding: 2rem;
+        padding: 5rem;
     }
 }
 
@@ -544,6 +585,8 @@ header {
     .inicio {
         .inicio-slider {
             .slide {
+                flex-wrap: wrap;
+
                 .content {
                     h3 {
                         color: var(--black);
@@ -564,6 +607,28 @@ header {
         img {
             height: auto;
             width: 100%;
+        }
+    }
+
+    .nosotros {
+        padding: 5rem;
+    }
+
+    .contacto {
+        padding-left: 5rem;
+
+        .box-icons {
+            padding-bottom: 5rem;
+
+
+            .boxes {
+                padding-bottom: 45px;
+            }
+        }
+
+        .box-container {
+            gap: 1.5rem;
+            justify-content: flex-start;
         }
     }
 }
